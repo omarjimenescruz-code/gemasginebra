@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MI PAGINA</title>
+</head>
+<body>
+	<div class="contenedor">
+		<header class="cabecera">
+			<div class="logo">
+				<img src="imagenes/logo.jpg" alt="logo" width="600" height="340">
+			</div>
+			<div class="banner">
+				<img src="imagenes/banner.png" alt="banner" width="600" height="340">	
+			</div>
+		</header>
+		<nav class="menu">
+
+			<div class="hamburguesa" id="hamburguesa">
+				<span class="barra"></span>
+				<span class="barra"></span>
+				<span class="barra"></span>
+			</div>
+			<ul class="menulista" id="menulista">
+			 <li class="menuitem"><a href="index.html" class="menulink">Inicio</a></li>
+			 <li class="menuitem"><a href="html/catalogo.html" class="menulink">Catalogo de Joyas</a></li>
+			 <li class="menuitem"><a href="html/Sucursal.html" class="menulink">Sucursal</a></li>
+			</ul>
+		</nav>
+
+		<main class="principal">
+			<section class="seccion1">
+					<b>Bienvenidos a Gemas Ginebra, donde cada joya es más que un accesorio: es una forma de expresar tu estilo.</b>
+					<img src="imagenes/collares.jpg" alt="collares">
+			</section>
+
+      <div class="secciones">
+					<div class="seccion2">
+					 
+						<p>En GG encontrarás joyería creada para acompañarte en cada ocasión, desde regalos inolvidables hasta accesorios que complementan tu outfit.</p>
+						<img src="imagenes/abejitas.jpg" alt="abejitas">
+					
+					</div>
+
+			
+						<div class="seccion3">
+						<p>Gracias por confiar en nosotros y permitirnos ser parte de tus momentos más importantes y los de tus seres queridos!.</p>
+					        <img src="imagenes/conjunto.jpg" alt="conjunto">
+					</div>
+		
+				</div>
+		</main>	
+        
+      <footer class="pie">
+      <center> Como contactarnos:
+
+    <div class="footer-container">
+    <p>© GG Gemas Ginebra</p>
+
+    <p>Calle Independencia #12, Santiago Comaltepec, Oaxaca, México</p>
+  <p>Tel: (951) 380-78-29 | WhatsApp: (951) 380-78-29</p>
+  <p>Email: gemasginebra@gmail.com</p>
+
+    </div>
+    </footer>
+</body>
+</html>
+
+<script>
+        const hamburguesa = document.getElementById("hamburguesa");
+        const menulista = document.getElementById("menulista");
+        hamburguesa.addEventListener("click", () => {
+	    hamburguesa.classList.toggle("active");
+	    menulista.classList.toggle("active");
+        });
+</script>
